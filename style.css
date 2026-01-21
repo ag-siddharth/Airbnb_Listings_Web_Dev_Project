@@ -1,0 +1,142 @@
+body{
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+/* Big title */
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+#loading{
+    text-align:center;
+    padding: 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Grid for cards */
+#listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+/* One listing card */
+.listing {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+}
+
+/* Listing thumbnail */
+.thumbnail {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Right side content */
+.card-content {
+    flex: 1;
+}
+
+/* Listing name/title */
+.name {
+    font-weight: bold;
+    margin: 4px 0;
+    color: #222;
+    font-size: 18px;
+}
+
+/* Rating pill (creative addition) */
+.rating-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Colors based on rating */
+.rating-high {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+
+.rating-medium {
+    background-color: #fff7e6;
+    color: #b05a00;
+}
+
+.rating-low {
+    background-color: #fdecea;
+    color: #b3261e;
+}
+
+.price {
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #444;
+    margin: 4px 0;
+}
+
+.amenities {
+    font-size: 12px;
+    color: #666;
+    margin: 4px 0;
+}
+
+/* Host row */
+.host {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+/* Host photo */
+.host-photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Host name */
+.host-name {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Link to Airbnb */
+.view-link {
+    text-decoration: none;
+    color: #FF385C;
+    font-weight: bold;
+    font-size: 14px;
+}
+.listing-card {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;  /* line after each card */
+}
+
+/* Optional: remove line after the last card */
+#listings-container .listing-card:last-child {
+  border-bottom: none;
+}
