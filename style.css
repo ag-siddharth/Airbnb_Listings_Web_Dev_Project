@@ -131,12 +131,3 @@ h1{
     font-weight: bold;
     font-size: 14px;
 }
-.listing-card {
-  padding: 12px 0;
-  border-bottom: 1px solid #ddd;  /* line after each card */
-}
-
-/* Optional: remove line after the last card */
-#listings-container .listing-card:last-child {
-  border-bottom: none;
-}
